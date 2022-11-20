@@ -14,7 +14,7 @@
     float: left;
 
     &:not(:last-child) {
-      margin-bottom: $gutter-horizontal;
+      margin-right: $gutter-horizontal;
     }
   }
 
