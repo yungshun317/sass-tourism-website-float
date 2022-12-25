@@ -115,6 +115,20 @@ body {
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
 
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: .15;
+  overflow: hidden; }
+  .bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -345,7 +359,10 @@ body {
   .story__img {
     height: 100%;
     transform: translateX(-4rem) scale(1.4);
+    backface-visibility: hidden;
     transition: all .5s; }
+  .story__text {
+    transform: skewX(12deg); }
   .story__caption {
     position: absolute;
     top: 50%;
@@ -360,7 +377,7 @@ body {
     backface-visibility: hidden; }
   .story:hover .story__caption {
     opacity: 1;
-    transform: translateY(-50%, -50%); }
+    transform: translate(-50%, -50%); }
   .story:hover .story__img {
     transform: translateX(-4rem) scale(1);
     filter: blur(0.3rem) brightness(80%); }
