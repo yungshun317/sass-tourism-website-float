@@ -460,6 +460,18 @@ body {
     transform: translateX(-4rem) scale(1);
     filter: blur(0.3rem) brightness(80%); }
 
+.footer {
+  background-color: #333;
+  padding: 10rem 0;
+  font-size: 1.4rem;
+  color: #f7f7f7; }
+  .footer__logo-box {
+    text-align: center;
+    margin-bottom: 8rem; }
+  .footer__logo {
+    width: 15rem;
+    height: auto; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
