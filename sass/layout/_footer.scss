@@ -50,4 +50,11 @@
       transform: rotate(5deg) scale(1.3);
     }
   }
+
+  &__copyright {
+    border-top: .1rem solid $color-gray-dark;
+    padding-top: 2rem;
+    width: 80%;
+    float: right;
+  }
 }
