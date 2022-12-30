@@ -91,4 +91,35 @@
       opacity: 1;
       width: 100%;
     }
+
+    // Icon
+    &__icon {
+      position: relative;
+      margin-top: 3.5rem;
+
+      &,
+      &::before,
+      &::after {
+        width: 3rem;
+        height: .2rem;
+        background-color: $color-gray-dark-3;
+        display: inline-block;
+      }
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        transition: all .2s;
+      }
+
+      &::before {
+        top: -.8rem;
+      }
+
+      &::after {
+        top: .8rem;
+      }
+    }
 }
