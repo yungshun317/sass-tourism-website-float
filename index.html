@@ -150,9 +150,10 @@
                </div>
                <div class="col-1-of-2">
                    <div class="composition">
-                       <img src="img/img-1.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
-                       <img src="img/img-2.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
-                       <img src="img/img-3.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
+                       <!-- Resolution switching: Different sizes -->
+                       <img srcset="img/img-1.jpg 300w, img/img-1-large.jpg 1000w" sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="Photo 1" class="composition__photo composition__photo--p1" src="img/img-1-large.jpg">
+                       <img srcset="img/img-2.jpg 300w, img/img-2-large.jpg 1000w" sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="Photo 2" class="composition__photo composition__photo--p2" src="img/img-2-large.jpg">
+                       <img srcset="img/img-3.jpg 300w, img/img-3-large.jpg 1000w" sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="Photo 3" class="composition__photo composition__photo--p3" src="img/img-3-large.jpg">
                    </div>
                </div>
            </div>
@@ -387,6 +388,8 @@
    <footer class="footer">
        <div class="footer__logo-box">
            <!-- <img src="img/logo-white.png" alt="Full logo" class="footer__logo"> -->
+
+           <!-- Art direction -->
            <picture class="footer__logo">
                <source srcset="img/logo-white-small-1x.png"
                        media="(max-width: 37.5em)">
@@ -394,6 +397,9 @@
                        media="(min-width: 37.5em)">
                <img alt="Full logo" src="img/logo-white-small-2x.png">
            </picture>
+
+           <!-- Resolution switching: Same size, different resolutions -->
+           <!-- <img srcset="img/logo-white-small-1x.png 1x, img/logo-white-small-2x.png 2x" src="img/logo-white-small-2x.png" alt="Full logo" class="footer__logo"> -->
        </div>
        <div class="row">
            <div class="col-1-of-2">
