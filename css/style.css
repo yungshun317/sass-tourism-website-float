@@ -362,7 +362,7 @@ body {
         padding: 1rem 3rem; }
       .card__cta {
         position: relative;
-        top: 0%;
+        top: 0;
         left: 0;
         transform: translate(0);
         width: 100%;
@@ -678,7 +678,7 @@ body {
     @media (max-width: 56.25em) {
       .footer__logo-box {
         margin-bottom: 6rem; } }
-  .footer__logo {
+  .footer__logo img {
     width: 15rem;
     height: auto; }
   .footer__navigation {
@@ -775,8 +775,16 @@ body {
       clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
   .header__logo-box {
     position: absolute;
-    top: 4rem;
-    left: 4rem; }
+    top: 6rem;
+    left: 6rem; }
+    @media (max-width: 56.25em) {
+      .header__logo-box {
+        top: 4rem;
+        left: 4rem; } }
+    @media (max-width: 37.5em) {
+      .header__logo-box {
+        top: 3rem;
+        left: 3rem; } }
   .header__logo {
     height: 3.5rem; }
     .header__logo:hover {
@@ -919,9 +927,6 @@ body {
   background-color: #f7f7f7;
   padding: 25rem 0;
   margin-top: -20vh; }
-  @media (max-width: 56.25em) {
-    .section-about {
-      padding: 20rem 0; } }
 
 .section-features {
   padding: 20rem 0;
